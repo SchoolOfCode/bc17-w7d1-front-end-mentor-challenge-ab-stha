@@ -1,3 +1,104 @@
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
 body {
+    max-width: 600px;
+    width: 100%;
     background-color: #f3eae3;
+    margin: 0;
+    padding: 0;
+}
+
+.mainSection {
+    /* min-width: calc(100% - 20px);     what does this do?*/
+    width: 100%;
+    background-color: white;
+    /* margin: auto; */
+    /* width: 35 em;
+    height: 26.5em; */
+    margin-left: 17px;
+    margin-right: 17px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* display: grid;
+    grid-template-rows: 1fr 1.5fr; */
+    display: grid;
+    grid-template-rows: 39% 1fr;
+
+    border-radius: 18px;
+    text-align: center;
+}
+
+.image {
+    padding: 0;
+    margin: 0;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+    /* object-fit: cover; */
+}
+
+.second {
+    /* display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
+    justify-content: center;
+    grid-row: 2;
+    padding: 25px;
+}
+
+#nameOfProduct {
+    color: #1f262d;
+}
+
+.pricing {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.pricing h1 {
+    color: #3d8168;
+    font-size: 1.85em;
+    font-weight: 700;
+}
+
+.pricing h3 {
+    text-decoration: line-through;
+}
+
+.buttonDiv {
+    /* why when i put width 100% it makes div bigger than parent div. Shouldn't it be 100% of parent div?
+    width: 100%; */
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+button {
+    background-color: #3d8168;
+    color: white;
+    width: 100%;
+    height: 4em;
+    border-radius: 12px;
 }
